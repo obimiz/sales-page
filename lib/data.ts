@@ -20,7 +20,7 @@ export type Product = {
 export const products: Product[] = [
   {
     id: 1,
-    images: ["/images/HP-840-G3.png", "/images/hp-zbook-14u.png", "/images/Hp-probook-440-G7.png"],
+    images: ["/images/840-G3-1.png", "/images/840-G3-2.png", "/images/840-G3-3.png"],
     brand: "HP",
     model: "EliteBook 840 G3",
     processor: "Intel Core i5",
@@ -37,7 +37,7 @@ export const products: Product[] = [
   },
   {
     id: 2,
-    images: ["/images/HP-840-G3.png", "/images/HP-840-G3.png", "/images/HP-840-G3.png"],
+    images: ["/images/Hp-elitebook-840-G3.png", "/images/hp-probook-440-g7.png", "/images/hp-840-G5.jpeg"],
     brand: "HP",
     model: "EliteBook 840 G3",
     processor: "Intel Core i5",

@@ -50,26 +50,46 @@ export default function ProductCard({
     <div className="bg-white border rounded-xl p-4 shadow-sm">
 
       {/* Image Slider */}
-      <div className="relative flex justify-center mb-4">
+      <div className="relative w-full h-64 bg-gray-100 rounded-lg overflow-hidden mb-4">
         <Image
           src={images[currentImage]}
           alt={model}
-          width={320}
-          height={160}
-          className="object-contain"
+          fill
+          className="object-contain p-4"
         />
-        <button
-          onClick={prevImage}
-          className="absolute left-0 top-1/2 -translate-y-1/2 bg-gray-200 px-2 rounded"
-        >
-          ◀
-        </button>
-        <button
-          onClick={nextImage}
-          className="absolute right-0 top-1/2 -translate-y-1/2 bg-gray-200 px-2 rounded"
-        >
-          ▶
-        </button>
+
+        {/* Only show buttons if more than 1 image */}
+        {images.length > 1 && (
+          <>
+            <button
+              onClick={prevImage}
+              className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-700 w-7 h-7 rounded-full shadow flex items-center justify-center text-xs transition"
+            >
+              ◀
+            </button>
+            <button
+              onClick={nextImage}
+              className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-700 w-7 h-7 rounded-full shadow flex items-center justify-center text-xs transition"
+            >
+              ▶
+            </button>
+          </>
+        )}
+
+        {/* Dot indicators */}
+        {images.length > 1 && (
+          <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1">
+            {images.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrentImage(i)}
+                className={`w-1.5 h-1.5 rounded-full transition ${
+                  i === currentImage ? "bg-gray-700" : "bg-gray-400"
+                }`}
+              />
+            ))}
+          </div>
+        )}
       </div>
 
       <h3 className="font-semibold text-sm">{brand} {model}</h3>
@@ -88,8 +108,8 @@ export default function ProductCard({
         ₦{price.toLocaleString()}
       </p>
 
-      <a
-        href={whatsappLink}
+      
+        <a href={whatsappLink}
         target="_blank"
         rel="noopener noreferrer"
         className="mt-4 flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg"
