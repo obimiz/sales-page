@@ -15,8 +15,11 @@ export default function HeroSection() {
           className="object-cover object-center sm:object-cover"
         />
 
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/75 to-black/90 sm:bg-gradient-to-r sm:from-black/80 sm:via-black/55 sm:to-black/20" />
+        {/* Mobile Overlay */}
+        <div className="absolute inset-0 bg-black/60 sm:hidden" />
+
+        {/* Desktop Overlay */}
+        <div className="absolute inset-0 hidden sm:block bg-gradient-to-r from-black/80 via-black/55 to-black/20" />
 
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 h-full min-h-[90vh] flex items-center">
@@ -30,7 +33,7 @@ export default function HeroSection() {
               <span className="text-[oklch(0.6232_0.1879_259.8)]">Perfect Laptop</span>
             </h1>
 
-            <p className="text-gray-300 text-base sm:text-lg md:text-xl max-w-lg">
+            <p className="text-white text-base sm:text-lg md:text-xl max-w-lg drop-shadow-lg">
               Explore top brands like HP, Dell, Apple, Lenovo and more —
               backed by expert after-care service.
             </p>
