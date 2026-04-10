@@ -22,7 +22,7 @@ export default function Laptops() {
           </p>
           <h1 className="text-4xl font-bold text-white">Available Laptops</h1>
           <p className="text-gray-400 mt-3 text-base max-w-xl mx-auto">
-            {products.length} laptops in stock — new arrivals added regularly.
+            — new arrivals added regularly.
           </p>
         </div>
 

@@ -40,7 +40,7 @@ export default function HeroSection() {
 
             <div className="flex items-center gap-4 mt-8">
               <Link
-                href="/laptops"
+                href="#laptops"
                 className="
                   w-full sm:w-72 text-center
                   px-8 py-4 rounded-xl font-semibold text-white text-lg tracking-wide

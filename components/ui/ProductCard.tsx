@@ -50,12 +50,12 @@ export default function ProductCard({
     <div className="bg-white border rounded-xl p-4 shadow-sm">
 
       {/* Image Slider */}
-      <div className="relative w-full h-64 bg-gray-100 rounded-lg overflow-hidden mb-4">
+      <div className="relative w-full h-64 bg-gray-100 rounded-lg overflow-hidden mb-4 p-3">
         <Image
           src={images[currentImage]}
           alt={model}
           fill
-          className="object-contain p-4"
+          className="object-contain"
         />
 
         {/* Only show buttons if more than 1 image */}
