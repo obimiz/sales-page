@@ -20,7 +20,7 @@ export type Product = {
 export const products: Product[] = [
   {
     id: 1,
-    images: ["/images/latitude-3310.png", "/images/latitude-3310-2.png"],
+    images: ["/images/Latitude-3310.png", "/images/Latitude-3310-1.png"],
     brand: "Dell",
     model: "Latitude 3310",
     processor: "Intel Core i5",
@@ -258,7 +258,7 @@ export const products: Product[] = [
   },
   {
     id: 15,
-    images: ["/images/elitebook-1030-G2.png", "/images/elitebook-1030-G2-2.png"],
+    images: ["/images/Elitebook-1030-G2.png", "/images/Elitebook-1030-G2-2.png"],
     brand: "HP",
     model: "Elitebook 1030 G2",
     processor: "Intel Core i7",
