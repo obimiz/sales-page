@@ -20,7 +20,7 @@ export type Product = {
 export const products: Product[] = [
   {
     id: 1,
-    images: ["/images/Latitude-3550-13.png", "/images/Latitude-3550-2.png"],
+    images: ["/images/Latitude-3550-13th.png", "/images/Latitude-3550-13th-2.png"],
     brand: "Dell",
     model: "Latitude 3550",
     processor: "Intel Core i5",
