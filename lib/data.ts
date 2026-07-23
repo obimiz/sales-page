@@ -192,7 +192,7 @@ export const products: Product[] = [
     id: 11,
     images: ["/images/HP-250-G6.png", "/images/HP-250-G6-1.png"],
     brand: "HP",
-    model: "HP 25 G6",
+    model: "250 G6",
     processor: "Intel Core i5",
     processorGeneration: "7th Gen",
     ram: "8GB",
