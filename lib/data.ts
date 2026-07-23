@@ -20,7 +20,7 @@ export type Product = {
 export const products: Product[] = [
   {
     id: 1,
-    images: ["/images/Latitude-3550-13th-Gen.png", "/images/latitude-3550-13th-2.png"], 
+    images: ["/images/Latitude-3550-13th-Gen.png", "/images/Latitude-3550-13-Gen-1.png"], 
     brand: "Dell",
     model: "2023 Latitude 3550",
     processor: "Intel Core i5",
@@ -71,7 +71,7 @@ export const products: Product[] = [
   },
   {
     id: 4,
-    images: ["/images/pavilion15.png", "/images/pavilion15_1.png"],
+    images: ["/images/Eliebook-840-G7-1.png", "/images/Eliebook-840-G7.png"],
     brand: "HP",
     model: "Pavilion 15",
     processor: "Intel Core i5",
@@ -105,7 +105,7 @@ export const products: Product[] = [
   },
   {
     id: 6,
-    images: ["/images/840G3.png", "/images/840G3_1.png", "/images/440G3_2.png"],
+    images: ["/images/840G3.png", "/images/Elitebook-840-G8-1.png", "/images/Elitebook-840-G8.png"],
     brand: "HP",
     model: "EliteBook 840 G3",
     processor: "Intel Core i5",
