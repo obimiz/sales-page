@@ -71,7 +71,7 @@ export const products: Product[] = [
   },
   {
     id: 4,
-    images: ["/images/Eliebook-840-G7-1.png", "/images/Eliebook-840-G7.png"],
+    images: ["/images/Eliebook-840-G7-1.png", "/images/Eliebook-840-G7-1.png"],
     brand: "HP",
     model: "Elitebook 840 G7",
     processor: "Intel Core i5",
@@ -224,7 +224,7 @@ export const products: Product[] = [
   },
   {
     id: 13,
-    images: ["/images/Elitebook-745-G3-1.png", "/images/Elitebook-745-G3.png"],
+    images: ["/images/Elitebook-745-G3.png", "/images/Elitebook-745-G3.png"],
     brand: "HP",
     model: "Elitebook 745 G3",
     processor: "Intel Core i5",
