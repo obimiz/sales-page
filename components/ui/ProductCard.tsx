@@ -39,7 +39,7 @@ export default function ProductCard({
 }: ProductCardProps) {
 
   const [currentImage, setCurrentImage] = useState(0)
-  const phone = "2347030616144"
+  const phone = "2347014064141"
   const message = `Hello, I'm interested in the ${brand} ${model}`
   const whatsappLink = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
 
